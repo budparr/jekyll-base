@@ -1,0 +1,56 @@
+#configuration options for http://prose.io editor
+prose:
+  siteurl: ''
+  media: 'assets/img'
+  ignore:
+    - .gitignore
+    - 404.html
+    - CNAME
+    - atom.xml
+    - favicon.ico
+    - license.md
+    - readme.md
+    - gemfile
+    - Gemfile.lock
+    - robots.txt
+    - _config.yml
+    - _prose.yml
+    - /assets
+    - /_layouts
+    - /_includes
+    - /_site
+  metadata:
+   _posts:
+    - name: 'title'
+      field:
+       element: 'text'
+       label: 'Title'
+       placeholder: 'Put your title here'
+  _pages:
+    - name: 'layout'
+      field:
+        element: 'hidden'
+        value: 'page'
+    - name: 'title'
+      field:
+        element: 'text'
+        label: 'Title'
+        placeholder: 'Title'
+        value: 'Title'
+    - name: 'permalink'
+      field:
+        element: 'text'
+        label: 'Link'
+        help: '/page-name/'
+    - name: 'include'
+      field:
+        label: 'Include Snippet'
+        element: 'text'
+        help: 'for developer use only'
+        label: 'snippet'
+    - name: 'sharing'
+      field:
+        element: 'checkbox'
+        label: 'Add Sharing Buttons to this page?'
+        help: 'Check if you want sharing buttons to show up on the page.'
+        value: 'false'

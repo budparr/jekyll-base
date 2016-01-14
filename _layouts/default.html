@@ -1,0 +1,18 @@
+---
+layout: compress
+---
+  {% include global/head.html %}
+  <body  id="container" class="{% if page.class %} {{ page.class }}{% endif %}{{page.url | replace: '/', '' }} {{ jekyll.environment }}">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    {% include global/nav-topbar.html %}
+    <section id="main" class="content">
+      <div id="start-of-content" class="accessibility-aid"></div>
+      {{content}}
+    </section>
+    {% include footer.html %}
+    {% include global/scripts.html %}
+    {% if jekyll.environment == "production" %}
+      {% include global/analytics.html %}
+    {% endif %}
+  </body>
+</html>

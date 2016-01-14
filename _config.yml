@@ -1,0 +1,85 @@
+# Site settings
+title: Your awesome title
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+image_url: http://thenewdynamic.imgix.net
+twitter_username: jekyllrb
+github_username:  jekyll
+
+
+## DO NOT EDIT BELOW THIS LINE
+production: false
+# PLUGINS
+gems:
+  - jekyll-assets
+full_rebuild: true
+timezone: Etc/Zulu
+include:
+  - _pages
+exclude:
+  - readme.md
+  - todo.md
+  - license.md
+  - Gemfile
+  - Gemfile.lock
+  - bower.json
+  - CNAME
+  - node_modules
+  - sass
+  - gulpfile.js
+  - package.json
+  - javascript
+  - vendor
+permalink: pretty
+future: false
+
+# PRODUCTION
+google_analytics_id: UA-30899180-4
+bust_css_cache: true
+
+# CONTENT
+collections:
+  articles:
+    output: true
+    permalink: '/article/:path/'
+# DEFAULTS
+defaults:
+  - scope:
+      path: ''
+      type: pages
+    values:
+      layout: page
+  - scope:
+      path: ''
+      type: posts
+    values:
+      layout: post
+# ASSETS
+assets:
+  compress:
+    css: true
+    js: true
+  cache: .asset-cache
+  cdn: /
+  skip_baseurl_with_cdn: false
+  skip_prefix_with_cdn: false
+  assets:
+    - "*.png"
+    - "*.scss"
+    - "*.svg"
+    - "*.js"
+  digest: default
+  sources:
+    - _assets/bower/html5shiv/dist/html5shiv.min.js
+    - _assets/_sass
+    - _assets/fonts
+    - _assets/img
+    - _assets/js
+  features:
+    automatic_img_size: true
+    automatic_img_alt : true

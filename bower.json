@@ -1,0 +1,29 @@
+{
+  "name": "jekyll-base",
+  "authors": [
+    "budparr <budparr@sonnetmedia.net>"
+  ],
+  "description": "Base for Jekyll Sites",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "~2.2.0",
+    "html5shiv": "~3.7.3",
+    "respond": "~1.4.2",
+    "normalize-scss": "~3.0.3",
+    "normalize-opentype.css": "~0.2.4",
+    "modernizr": "~3.3.0",
+    "jquery.fitvids": "fitvids#~1.1.0",
+    "list.js": "listjs#~1.1.1"
+  }
+}
