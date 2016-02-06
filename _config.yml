@@ -52,6 +52,7 @@ defaults:
   - scope:
       path: ''
       type: pages
+      permalink: /:basename/
     values:
       layout: page
   - scope:
