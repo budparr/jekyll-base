@@ -17,6 +17,7 @@ production: false
 # PLUGINS
 gems:
   - jekyll-seo-tag
+  - jekyll-sitemap
 full_rebuild: true
 timezone: Etc/Zulu
 include:
