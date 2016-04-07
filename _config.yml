@@ -16,7 +16,7 @@ github_username:  jekyll
 production: false
 # PLUGINS
 gems:
-  - jekyll-assets
+  - jekyll-seo-tag
 full_rebuild: true
 timezone: Etc/Zulu
 include:
