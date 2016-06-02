@@ -1,0 +1,30 @@
+{
+  "name": "jekyll-base-budparr",
+  "version": "1.0.0",
+  "description": "Base Jekyll Starter",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "clean": "rm -f assets/{css/*,js/*,images/*}",
+    "uglify": "mkdir -p assets/js && uglifyjs _app/js/*.js -m -o assets/js/app.js && uglifyjs node_modules/jquery/dist/jquery.js _app/js/*.js -m -c -o assets/js/app.min.js",
+    "lint": "eslint _app/js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/budparr/jekyll-base.git"
+  },
+  "keywords": [
+    "jekyll"
+  ],
+  "author": "budparr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/budparr/jekyll-base/issues"
+  },
+  "homepage": "https://github.com/budparr/jekyll-base#readme",
+  "devDependencies": {
+    "eslint": "^2.11.1",
+    "eslint-config-google": "^0.5.0",
+    "uglify-js": "^2.6.2"
+  }
+}
