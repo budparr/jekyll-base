@@ -30,6 +30,9 @@ compress_html:
 gems:
   - jekyll-seo-tag
   - jekyll-sitemap
+plugins_dir:  ./_app/_plugins
+layouts_dir:  ./_app/_layouts
+includes_dir: ./_app/_includes
 
 
 # CONTENT
