@@ -18,17 +18,17 @@
     "watch:js": "onchange '_app/js/*.js' -- npm run build:js",
     "imagemin": "imagemin _app/images assets/images -p",
 
-    "minify": "postcss -u cssnano assets/css/main.css -o assets/css/main.min.css",
+    "minify": "postcss -u cssnano assets/css/main.css -o _site/assets/css/main.min.css",
     "build:css": "postcss -c postcss.config.js",
     "watch:css": "onchange '_app/css/**/*.css' -- run-s build:css minify",
     
     "build:jekyll": "bundle exec jekyll build",
-    "watch:jekyll": "onchange '_app/**/*' '**/*.md' '**/*.html' -- run-s build:jekyll reload",
+    "watch:jekyll": "onchange '_app/**/*' '**/*.md' '**/*.html' '_data/*.*' -- run-s build:jekyll reload",
     
-    "serve": "browser-sync start --server --ss '_site' --files '_site/assets/css/*.css, _site/assets/js/*.js'",
+    "serve": "browser-sync start --server '_site' --files '_site/assets/css/*.css' '_site/assets/js/*.js'",
     "reload": "browser-sync reload",
     
-    "start": "npm-run-all build:jekyll --parallel watch:jekyll watch:css watch:js serve"
+    "start": "npm-run-all --parallel serve watch:css watch:js"
   },
   "repository": {
     "type": "git",

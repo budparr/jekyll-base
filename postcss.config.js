@@ -11,5 +11,5 @@ module.exports = {
     'autoprefixer'
   ],
   input: '_app/css/main.css',
-  dir: ['./_site/assets/css', './assets/css']
+  dir: './assets/css'
 }
