@@ -1,17 +1,34 @@
 {
   "name": "jekyll-base-budparr",
-  "version": "1.0.6-0",
+  "version": "1.0.6",
   "description": "Base Jekyll Starter",
   "main": "index.html",
   "scripts": {
+    "version:major": "npm version major -m 'Breaking Release'",
+    "version:minor": "npm version minor -m 'Feature Release'",
+    "version:patch": "npm version patch -m 'bump version for fixes minor changes'",
+    "push:origin": "git push --tags origin HEAD:lean",
+    
     "test": "echo \"Error: no test specified\" && exit 0",
     "clean": "rm -f assets/{css/*,js/*,images/*}",
+    
     "uglify": "mkdir -p assets/js && uglifyjs _app/js/*.js -m -o assets/js/app.js && uglifyjs node_modules/jquery/dist/jquery.js _app/js/*.js -m -c -o assets/js/app.min.js",
     "lint": "eslint _app/js",
-    "version:major": "npm version major",
-    "version:minor": "npm version minor",
-    "version:patch": "npm version patch -m",
-    "push:origin" : "git push --tags origin HEAD:lean"
+    "build:js": "npm run lint && npm run uglify",
+    "watch:js": "onchange '_app/js/*.js' -- npm run build:js",
+    "imagemin": "imagemin _app/images assets/images -p",
+
+    "minify": "postcss -u cssnano assets/css/main.css -o assets/css/main.min.css",
+    "build:css": "postcss -c postcss.config.js",
+    "watch:css": "onchange '_app/css/**/*.css' -- run-s build:css minify",
+    
+    "build:jekyll": "bundle exec jekyll build",
+    "watch:jekyll": "onchange '_app/**/*' '**/*.md' '**/*.html' -- run-s build:jekyll reload",
+    
+    "serve": "browser-sync start --server --ss '_site' --files '_site/assets/css/*.css, _site/assets/js/*.js'",
+    "reload": "browser-sync reload",
+    
+    "start": "npm-run-all build:jekyll --parallel watch:jekyll watch:css watch:js serve"
   },
   "repository": {
     "type": "git",
@@ -27,8 +44,25 @@
   },
   "homepage": "https://github.com/budparr/jekyll-base#readme",
   "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "basscss": "^8.0.1",
+    "basscss-addons": "^1.0.0-beta4",
+    "basscss-basic": "^1.0.0",
+    "browser-sync": "^2.12.10",
+    "cssnano": "^3.6.2",
     "eslint": "^2.11.1",
     "eslint-config-google": "^0.5.0",
+    "imagemin-cli": "^2.1.0",
+    "npm-run-all": "^2.1.1",
+    "onchange": "^2.4.0",
+    "postcss": "^5.0.21",
+    "postcss-calc": "^5.2.1",
+    "postcss-cli": "^2.5.2",
+    "postcss-color-function": "^2.0.1",
+    "postcss-custom-media": "^5.0.1",
+    "postcss-custom-properties": "^5.0.1",
+    "postcss-discard-comments": "^2.0.4",
+    "postcss-import": "^8.1.2",
     "uglify-js": "^2.6.2"
   }
 }
