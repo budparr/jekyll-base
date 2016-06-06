@@ -22,7 +22,11 @@ layout: compress
 
       <link href='/assets/css/main.css{% if site.bust_css_cache %}?generated={{ site.time | date: "%Y%m%d%H%S" }}{% endif %}' rel='stylesheet' type="text/css" />
 
-
+      
+      <!--[if lt IE 9]>
+        <script src="/assets/js/legacy/html5shiv.min.js"></script>
+        <script src="/assets/js/legacy/flexibility.js"></script>        
+      <![endif]-->
 
       <link rel="icon" href="{{ site.url }}/favicon.ico" type="image/x-icon">
 
@@ -36,7 +40,6 @@ layout: compress
     {% include global/nav-topbar.html %}
     <section id="main" class="content">
       <div id="start-of-content" class="accessibility-aid"></div>
-      us
       {{content}}
     </section>
     {% include global/footer.html %}

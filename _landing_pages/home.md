@@ -2,4 +2,4 @@
 title: Home
 permalink: /
 ---
-Home page yo
+Home page 

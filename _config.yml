@@ -50,6 +50,7 @@ exclude:
   - sass
   - gulpfile.js
   - package.json
+  - postcss.config.js
 
 collections:
   landing_pages:
