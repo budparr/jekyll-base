@@ -1,20 +1,9 @@
-A starter theme for Jekyll.
+Base for starting a lean jekyll project.
 
+Assuming you have jekyll/bundler/node/npm installed...
 
-
-#### placeholder
-Instructions for moving to production
-
-Instructions for declaring which sidebars to use
-Settings + template
-
-#### TO DO
-- finish test posts
-- copy bower components to their respective production locations
-
-#### Install
-update local variables and options in _config file_
-run bundle update //updates gems
-run bower install //updates packages via bower
-run npm update
-
+`git clone -b lean https://github.com/budparr/jekyll-base.git project-name`
+`rm -rf .git`
+`bundle update`
+`npm install`
+`npm start`
