@@ -57,6 +57,7 @@
     "imagemin-cli": "^2.1.0",
     "install": "^0.8.1",
     "jquery": "^2.2.4",
+    "normalize.css": "^4.1.1",
     "npm": "^3.9.5",
     "npm-run-all": "^2.1.1",
     "onchange": "^2.4.0",
