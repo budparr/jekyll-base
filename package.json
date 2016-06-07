@@ -8,34 +8,24 @@
     "version:minor": "npm version minor -m 'Feature Release'",
     "version:patch": "npm version patch -m 'bump version for fixes minor changes'",
     "push:origin": "git push --tags origin HEAD:lean",
-    
     "test": "echo \"Error: no test specified\" && exit 0",
-    "clean:assets": "rm -rf assets",    
-    
+    "clean:assets": "rm -rf assets",
     "copy:files": "rm -f assets/js/legacy/* && copyfiles -f node_modules/flexibility/dist/flexibility.js node_modules/html5shiv/dist/html5shiv.min.js assets/js/legacy",
-    
     "uglify:js": "mkdir -p assets/js && uglifyjs _app/js/*.js -m -o assets/js/app.js && uglifyjs node_modules/jquery/dist/jquery.js _app/js/*.js -m -c -o assets/js/app.min.js",
     "lint:js": "eslint _app/js",
     "build:js": "npm run lint:js && npm run uglify:js",
     "watch:js": "onchange '_app/js/*.js' -- npm run build:js",
-    
     "compress:img": "imagemin _app/images assets/images -p",
     "watch:img": "onchange '_app/images/**/*.*' -- npm run compress:img",
-    
-    "build:css": "postcss -c postcss.config.js",  
-    "hotbuild:css": "copyfiles -f assets/css/* _site/assets/css",  
+    "build:css": "postcss -c postcss.config.js",
+    "hotbuild:css": "copyfiles -f assets/css/* _site/assets/css",
     "watch:css": "onchange '_app/css/**/*.css' -- run-s build:css hotbuild:css",
-    
     "clean:jekyll": "bundle exec jekyll clean",
     "build:jekyll": "bundle exec jekyll build",
     "watch:jekyll": "onchange '_app/**/*' '**/*.md' '_data/*.*' -- run-s build:jekyll reload",
-    
     "serve": "browser-sync start --server '_site' --files '_site/assets/js/*.js' '_site/assets/css/*.css'",
-    
     "reload": "browser-sync reload",
-
     "clean": "npm-run-all clean:assets clean:jekyll",
-      
     "start": "npm-run-all copy:files build:css build:js compress:img build:jekyll --parallel watch:css watch:js watch:jekyll watch:img serve",
     "watch": "run-p watch:css watch:js watch:jekyll watch:img serve"
   },
@@ -65,6 +55,9 @@
     "flexibility": "^1.0.5",
     "html5shiv": "^3.7.3",
     "imagemin-cli": "^2.1.0",
+    "install": "^0.8.1",
+    "jquery": "^2.2.4",
+    "npm": "^3.9.5",
     "npm-run-all": "^2.1.1",
     "onchange": "^2.4.0",
     "postcss": "^5.0.21",
