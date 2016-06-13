@@ -1,5 +1,5 @@
 # jekyll-seo-tag
-title: Your awesome title
+title: "Your awesome title, yo"
 description: "description"
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 author: []
@@ -12,6 +12,9 @@ facebook:
 logo: #path
 google_site_verification:
 
+# manifest
+short_name: The Shorname
+display: fullscreen
 
 # development meta data
 image_url: http://thenewdynamic.imgix.net
