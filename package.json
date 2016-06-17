@@ -1,5 +1,5 @@
 {
-  "name": "jekyll-base-budparr",
+  "name": "jekyll-base",
   "version": "1.0.6",
   "description": "Base Jekyll Starter",
   "main": "index.html",
@@ -10,7 +10,7 @@
     "push:origin": "git push --tags origin HEAD:lean",
     "test": "echo \"Error: no test specified\" && exit 0",
     "clean:assets": "rm -rf assets",
-    "copy:files": "rm -f assets/js/legacy/* && copyfiles -f node_modules/flexibility/dist/flexibility.js node_modules/html5shiv/dist/html5shiv.min.js assets/js/legacy",
+    "copy:files": "rm -f 'assets/js/legacy/*' && copyfiles -f node_modules/flexibility/dist/flexibility.js node_modules/html5shiv/dist/html5shiv.min.js assets/js/legacy && rm -rf assets/font/ && copyfiles -u 2 '_app/font/**/*.*' ./assets/font/",
     "uglify:js": "mkdir -p assets/js && uglifyjs _app/js/*.js -m -o assets/js/app.js && uglifyjs node_modules/jquery/dist/jquery.js _app/js/*.js -m -c -o assets/js/app.min.js",
     "lint:js": "eslint _app/js",
     "build:js": "npm run lint:js && npm run uglify:js",
@@ -20,6 +20,9 @@
     "build:css": "postcss -c postcss.config.js",
     "hotbuild:css": "copyfiles -f assets/css/* _site/assets/css",
     "watch:css": "onchange '_app/css/**/*.css' -- run-s build:css hotbuild:css",
+    "build:scss": "node-sass --include-path node_modules/bourbon-neat/app/assets/stylesheets --include-path node_modules/bourbon/app/assets/stylesheets --output-style compressed -o assets/css _app/_scss",
+    "watch:scss": "onchange '_app/_scss/**/*.scss' -- run-s build:scss hotbuild:css",
+    
     "clean:jekyll": "bundle exec jekyll clean",
     "build:jekyll": "bundle exec jekyll build",
     "watch:jekyll": "onchange '_app/**/*' '**/*.md' '_data/*.*' -- run-s build:jekyll reload",
@@ -27,7 +30,9 @@
     "reload": "browser-sync reload",
     "clean": "npm-run-all clean:assets clean:jekyll",
     "start": "npm-run-all copy:files build:css build:js compress:img build:jekyll --parallel watch:css watch:js watch:jekyll watch:img serve",
-    "watch": "run-p watch:css watch:js watch:jekyll watch:img serve"
+    "watch": "run-p build:jekyll watch:css watch:js watch:jekyll watch:img serve",
+    "start-with-scss": "npm-run-all copy:files build:scss build:js compress:img build:jekyll --parallel watch:scss watch:js watch:jekyll watch:img serve",
+    "watch-with-scss": "run-p build:jekyll watch:scss watch:js watch:jekyll watch:img serve"
   },
   "repository": {
     "type": "git",
@@ -47,6 +52,7 @@
     "basscss": "^8.0.1",
     "basscss-addons": "^1.0.0-beta4",
     "basscss-basic": "^1.0.0",
+    "bourbon-neat": "^1.7.4",
     "browser-sync": "^2.12.10",
     "copyfiles": "^0.2.1",
     "cssnano": "^3.6.2",
@@ -55,7 +61,10 @@
     "flexibility": "^1.0.5",
     "html5shiv": "^3.7.3",
     "imagemin-cli": "^2.1.0",
+    "install": "^0.8.1",
     "jquery": "^2.2.4",
+    "node-neat": "^1.7.2",
+    "node-sass": "^3.4.2",
     "normalize-opentype.css": "^0.2.4",
     "normalize.css": "^4.1.1",
     "npm-run-all": "^2.1.1",
