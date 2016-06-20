@@ -40,6 +40,7 @@ plugins_dir:  ./_app/_plugins
 layouts_dir:  ./_app/_layouts
 includes_dir: ./_app/_includes
 
+permalink: pretty
 
 # CONTENT
 exclude:
@@ -63,17 +64,22 @@ collections:
 defaults:
   - scope:
       path: ''
+    values:
+      layout: page-single
+  - scope:
+      path: ''
       type: 'landing_pages'
     values:
-      layout: page
+      layout: page-single
   - scope:
       path: ''
       type: pages
       permalink: /:basename/
     values:
-      layout: page
+      layout: page-single
   - scope:
       path: ''
       type: posts
     values:
-      layout: post
+      layout: page-single
+      schema: BlogPosting

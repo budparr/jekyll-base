@@ -1,8 +1,12 @@
 ---
 layout: default
-# schema: 'http://schema.org/BlogPosting'
-schema: 'https://schema.org/Article'
+schema: 'Article'
 ---
 <div id="start-of-content" class="content">
   {% include article.html %}
 </div>
+
+<!-- //temp -->
+{% for post in site.posts  %}
+  <a href="{{post.url}}">{{ post.title }}</a> <br />
+{% endfor %}

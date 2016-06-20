@@ -23,7 +23,7 @@ layout: compress
       <link href='/assets/css/main.css{% if site.bust_css_cache %}?generated={{ site.time | date: "%Y%m%d%H%S" }}{% endif %}' rel='stylesheet' type="text/css" />
 
       <link rel="manifest" href="{{ site.url }}/manifest.json">
-
+      <meta name="generator" content="Jekyll">
       
       <!--[if lt IE 9]>
         <script src="/assets/js/legacy/html5shiv.min.js"></script>
@@ -34,13 +34,14 @@ layout: compress
 
       {% if jekyll.environment == "production" %}
           {% include global/analytics.html %}
-          {% include global/seo.html %}
+          
         {% endif %}
+        {% include global/seo.html %}
 </head>
   <body  id="container" class="{% if page.class %} {{ page.class }} {% endif %}{{ jekyll.environment }}">
     <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
     {% include global/nav-topbar.html %}    
-      {{content}}    
+      {{content}}        
     {% include global/footer.html %}
     {% include global/scripts.html %}
   </body>

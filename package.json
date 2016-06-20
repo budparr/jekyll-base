@@ -17,12 +17,12 @@
     "watch:js": "onchange '_app/js/*.js' -- npm run build:js",
     "compress:img": "imagemin _app/images assets/images -p",
     "watch:img": "onchange '_app/images/**/*.*' -- npm run compress:img",
-    "build:css": "postcss -c postcss.config.js",
+    "build:css": "postcss -c _app/css/postcss.config.js",
+    "build:tachyons": "tachyons _app/css/main.css > ./assets/css/main-t.css",
     "hotbuild:css": "copyfiles -f assets/css/* _site/assets/css",
     "watch:css": "onchange '_app/css/**/*.css' -- run-s build:css hotbuild:css",
     "build:scss": "node-sass --include-path node_modules/bourbon-neat/app/assets/stylesheets --include-path node_modules/bourbon/app/assets/stylesheets --output-style compressed -o assets/css _app/_scss",
     "watch:scss": "onchange '_app/_scss/**/*.scss' -- run-s build:scss hotbuild:css",
-    
     "clean:jekyll": "bundle exec jekyll clean",
     "build:jekyll": "bundle exec jekyll build",
     "watch:jekyll": "onchange '_app/**/*' '**/*.md' '_data/*.*' -- run-s build:jekyll reload",
@@ -78,6 +78,8 @@
     "postcss-discard-comments": "^2.0.4",
     "postcss-flexibility": "^1.0.3",
     "postcss-import": "^8.1.2",
+    "tachyons": "^4.0.0-beta.31",
+    "tachyons-cli": "^0.6.0",
     "uglify-js": "^2.6.2"
   }
 }

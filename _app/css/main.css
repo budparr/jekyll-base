@@ -1,56 +1,55 @@
-/* Settings */
-@import '_settings-colors.css';
+/* Variables */
+
+/*@import 'normalize.css';
+@import 'normalize-opentype.css/normalize-opentype.css';*/
+@import 'tachyons/src/_media-queries';
+@import 'tachyons-colors';
+
+/* Modules */
+
+@import 'tachyons-box-sizing';
+@import 'tachyons-background-size';
+@import 'tachyons-borders';
+@import 'tachyons-border-colors';
+@import 'tachyons-border-radius';
+@import 'tachyons-border-style';
+@import 'tachyons-border-widths';
+@import 'tachyons-box-shadow';
+/*@import 'tachyons-code';*/
+@import 'tachyons-coordinates';
+@import 'tachyons-clears';
+@import 'tachyons-display';
+@import 'tachyons-floats';
+@import 'tachyons-font-family';
+@import 'tachyons-font-style';
+@import 'tachyons-font-weight';
+@import 'tachyons-forms';
+@import 'tachyons-heights';
+@import 'tachyons-letter-spacing';
+@import 'tachyons-line-height';
+@import 'tachyons-links';
+@import 'tachyons-lists';
+@import 'tachyons-max-widths';
+@import 'tachyons-widths';
+@import 'tachyons-overflow';
+@import 'tachyons-position';
+@import 'tachyons-opacity';
+@import 'tachyons-skins';
+@import 'tachyons-spacing';
+@import 'tachyons-tables';
+@import 'tachyons-text-decoration';
+@import 'tachyons-text-align';
+@import 'tachyons-text-transform';
+@import 'tachyons-type-scale';
+@import 'tachyons-typography';
+@import 'tachyons-utilities';
+@import 'tachyons-visibility';
+@import 'tachyons-white-space';
+@import 'tachyons-vertical-align';
+@import 'tachyons-hovers';
 
 
-/* Generic */
-@import 'normalize.css/normalize.css';
-@import 'normalize-opentype.css/normalize-opentype.css';
+@import 'tachyons/src/_debug_children';
 
-/* Base */
-@import 'basscss-basic';
-
-@import 'basscss-typography';
-@import 'basscss-layout';
-@import 'basscss-align';
-@import 'basscss-margin';
-@import 'basscss-padding';
-@import 'basscss-grid';
-@import 'basscss-flexbox';
-@import 'basscss-position';
-@import 'basscss-border';
-@import 'basscss-hide';
-
-
-/*
-
-
-
-@import 'basscss-addons/modules/responsive-margin';
-@import 'basscss-addons/modules/responsive-padding';
-
-@import 'basscss-addons/modules/input-range';
-@import 'basscss-addons/modules/progress';
-
-@import 'basscss-addons/modules/border-colors';
-@import 'basscss-addons/modules/darken';
-@import 'basscss-addons/modules/lighten';
-*/
-
-
-/* Objects */
-@import '_elements-headings.css';
-@import '_elements-links.css';
-/*@import 'basscss-addons/modules/btn';
-@import 'basscss-addons/modules/btn-primary';
-@import 'basscss-addons/modules/btn-outline';
-@import 'basscss-addons/modules/btn-sizes';
-@import 'basscss-addons/modules/forms';
-*/
-
-/* Components */
-/*@import 'basscss-addons/modules/background-images';*/
-/*@import 'basscss-addons/modules/media-object';*/
-
-
-/* Overrides */
-@import '_overrides-home.css';
+/* Uncomment out this line if you want to debug your layout */
+/* @import 'tachyons-debug'; */

@@ -6,9 +6,14 @@ module.exports = {
     'postcss-custom-media',
     'postcss-custom-properties',
     'postcss-calc',
-    'autoprefixer',
-    'cssnano'
+    'autoprefixer'
   ],
   input: '_app/css/main.css',
-  dir: './assets/css'
+  dir: './assets/css',
+  cssnano: {
+     discardComments: {
+        removeAll: true
+    }
+  }
+
 }
