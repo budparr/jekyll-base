@@ -1,55 +1,21 @@
-/* Variables */
-
-/*@import 'normalize.css';
-@import 'normalize-opentype.css/normalize-opentype.css';*/
-@import 'tachyons/src/_media-queries';
-@import 'tachyons-colors';
-
-/* Modules */
-
-@import 'tachyons-box-sizing';
-@import 'tachyons-background-size';
-@import 'tachyons-borders';
-@import 'tachyons-border-colors';
-@import 'tachyons-border-radius';
-@import 'tachyons-border-style';
-@import 'tachyons-border-widths';
-@import 'tachyons-box-shadow';
-/*@import 'tachyons-code';*/
-@import 'tachyons-coordinates';
-@import 'tachyons-clears';
-@import 'tachyons-display';
-@import 'tachyons-floats';
-@import 'tachyons-font-family';
-@import 'tachyons-font-style';
-@import 'tachyons-font-weight';
-@import 'tachyons-forms';
-@import 'tachyons-heights';
-@import 'tachyons-letter-spacing';
-@import 'tachyons-line-height';
-@import 'tachyons-links';
-@import 'tachyons-lists';
-@import 'tachyons-max-widths';
-@import 'tachyons-widths';
-@import 'tachyons-overflow';
-@import 'tachyons-position';
-@import 'tachyons-opacity';
-@import 'tachyons-skins';
-@import 'tachyons-spacing';
-@import 'tachyons-tables';
-@import 'tachyons-text-decoration';
-@import 'tachyons-text-align';
-@import 'tachyons-text-transform';
-@import 'tachyons-type-scale';
-@import 'tachyons-typography';
-@import 'tachyons-utilities';
-@import 'tachyons-visibility';
-@import 'tachyons-white-space';
-@import 'tachyons-vertical-align';
-@import 'tachyons-hovers';
+@import 'normalize.css';
+@import 'normalize-opentype.css/normalize-opentype.css';
 
 
-@import 'tachyons/src/_debug_children';
+@import '_tachyons';
 
-/* Uncomment out this line if you want to debug your layout */
-/* @import 'tachyons-debug'; */
+/*@import '_basscss';*/
+
+
+@import '_elements-accessibility';
+
+
+@import '_settings-colors';
+@import '_settings-media-queries';
+@import '_settings';
+
+
+
+.content {
+min-height: 90vh;
+}

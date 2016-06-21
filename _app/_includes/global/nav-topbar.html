@@ -1,7 +1,16 @@
-<div class="flex flex-wrap bg-red border">
-  <div class="col-4">Hamburger</div>
-  <div class="col-4">Hamburger</div>
-  <div class="col-4">Hamburger</div>
-  <div class="col-4">Hamburger</div>
-  <div class="col-4">Hamburger</div>
-</div>
+
+<nav class="bg-brand cb db dt-ns w-100 border-box pa3 ph5-ns">
+  <ul class="dib dtc-ns v-mid w-100 w-75-ns tc tr-ns list ph3">    
+    {% for link in site.data.nav-links %}
+     <a class="link dim white f6 f5-ns dib mr3 mr4-ns" href="{{ link.url }}" title="{{ link.title }}">{{ link.title }}</a>
+    {% endfor %}
+  </ul>
+</nav>
+
+
+
+<header class="bg-brand tc pv4 pv5-ns">
+  <img src="{{ site.logo }}" class="br3 ba b--black-10 h3 w3" alt="avatar">
+  <h1 class="f5 f4-ns fw6 white-70">{{ site.title }}</h1>
+  <h2 class="f6 white-60 fw2 ttu tracked">{{ site.description }}</h2>
+</header>

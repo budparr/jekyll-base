@@ -1,6 +1,6 @@
 # jekyll-seo-tag
-title: "Your awesome title, yo"
-description: "description"
+title: "Lean Jekyll"
+description: "A starter for using jekyll"
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 author: []
 twitter:
@@ -9,11 +9,11 @@ facebook:
   app_id: 
   publisher: 
   admins: 
-logo: #path
+logo: /assets/images/jekyll-white.svg
 google_site_verification:
 
 # manifest
-short_name: The Shorname
+short_name: The Shortname
 display: fullscreen
 
 # development meta data

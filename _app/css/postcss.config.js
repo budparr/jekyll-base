@@ -6,7 +6,8 @@ module.exports = {
     'postcss-custom-media',
     'postcss-custom-properties',
     'postcss-calc',
-    'autoprefixer'
+    'autoprefixer',
+    'cssnano'
   ],
   input: '_app/css/main.css',
   dir: './assets/css',

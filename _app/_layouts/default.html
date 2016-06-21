@@ -41,7 +41,9 @@ layout: compress
   <body  id="container" class="{% if page.class %} {{ page.class }} {% endif %}{{ jekyll.environment }}">
     <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
     {% include global/nav-topbar.html %}    
-      {{content}}        
+      <div class="content">
+        {{content}}
+      </div>
     {% include global/footer.html %}
     {% include global/scripts.html %}
   </body>
