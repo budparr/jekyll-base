@@ -8,23 +8,23 @@
 @import '_tachyons/_border-widths';
 @import '_tachyons/_box-shadow';
 /*@import '_tachyons/_code';*/
-@import '_tachyons/_coordinates';
+/*@import '_tachyons/_coordinates';*/
 @import '_tachyons/_clears';
 @import '_tachyons/_display';
 @import '_tachyons/_floats';
-@import '_tachyons/_font-family';
+/*@import '_tachyons/_font-family';*/
 @import '_tachyons/_font-style';
 @import '_tachyons/_font-weight';
 @import '_tachyons/_forms';
 @import '_tachyons/_heights';
-@import '_tachyons/_letter-spacing';
+/*@import '_tachyons/_letter-spacing';*/
 @import '_tachyons/_line-height';
 @import '_tachyons/_links';
 @import '_tachyons/_lists';
 @import '_tachyons/_max-widths';
 @import '_tachyons/_widths';
 @import '_tachyons/_overflow';
-@import '_tachyons/_position';
+/*@import '_tachyons/_position';*/
 @import '_tachyons/_opacity';
 /*@import '_tachyons/_skins'; replacing with _settings-colors.css */
 @import '_tachyons/_spacing';
@@ -35,7 +35,7 @@
 @import '_tachyons/_type-scale';
 @import '_tachyons/_typography';
 @import '_tachyons/_utilities';
-@import '_tachyons/_visibility';
+/*@import '_tachyons/_visibility';*/
 @import '_tachyons/_white-space';
 @import '_tachyons/_vertical-align';
 @import '_tachyons/_hovers';

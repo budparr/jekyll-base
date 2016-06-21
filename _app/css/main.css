@@ -2,12 +2,14 @@
 @import 'normalize-opentype.css/normalize-opentype.css';
 
 
-@import '_tachyons';
+/*@import '_tachyons';*/
 
-/*@import '_basscss';*/
-
+@import '_basscss';
 
 @import '_elements-accessibility';
+
+
+
 
 
 @import '_settings-colors';
@@ -18,4 +20,10 @@
 
 .content {
 min-height: 90vh;
+}
+
+.element {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
