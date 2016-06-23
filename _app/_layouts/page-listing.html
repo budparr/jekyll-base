@@ -4,6 +4,12 @@ schema: https://schema.org/WebPage
 ---
 
 
-{% for post in site.posts  %}
-  <a href="{{post.url}}">{{ post.title }}</a> <br />
-{% endfor %}
+<div class="flex flex-wrap">
+  {% for post in site.posts  %}
+    <div class="p4 bg-near-white border">
+      <a href="{{post.url}}">
+        {{ post.title }}
+      </a>
+    </div>
+  {% endfor %}
+</div>
