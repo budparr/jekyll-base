@@ -11,6 +11,8 @@ facebook:
   admins: 
 logo: /assets/images/jekyll-white.svg
 google_site_verification:
+github:
+  username: budparr
 
 # manifest
 short_name: The Shortname
