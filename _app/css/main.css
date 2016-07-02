@@ -54,7 +54,7 @@
  * and override what is currently declared in each module.
  */
 
-@import '/_tachyons/_tachyons-flex';
+@import '/_tachyons/tachyons-flex';
 @import '_variables-media-queries';
 
 
