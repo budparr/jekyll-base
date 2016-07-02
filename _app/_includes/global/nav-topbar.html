@@ -1,5 +1,5 @@
 
-<nav class="bg-brand block ">
+<nav class="bg-black db  ">
   <div class="">    
     {% for link in site.data.nav-links %}
      <a class="white btn hover-silver " href="{{ link.url }}" title="{{ link.title }}">
@@ -11,11 +11,11 @@
 
 
 
-<header class="bg-brand p3" role="banner">
-  <img src="{{ site.logo }}" class="mx-auto block" alt="avatar" style="height:90px;">
+<header class="tc pv4 pv5-ns bg-black" role="banner">
+  <img src="{{ site.logo }}" class=" pa1 ba b--black-10 h3 w3" alt="avatar" style="height:90px;">
   
-  <h1 class="center white">{{ site.title }}</h1>
-  <h2 class="center white h5">{{ site.description }}</h2>
+  <h1 class="f5 f4-ns fw6 mid-gray">{{ site.title }}</h1>
+  <h2 class="f6 gray fw2 ttu tracked">{{ site.description }}</h2>
   
 </header>
 
