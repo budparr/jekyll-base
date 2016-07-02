@@ -1,29 +1,71 @@
-@import 'normalize.css';
-@import 'normalize-opentype.css/normalize-opentype.css';
+@import 'sanitize.css';
+/*@import 'normalize-opentype.css/normalize-opentype.css';*/
 
 
-/*@import '_tachyons';*/
+@import '/_fonts';
 
-@import '_basscss';
+/* Variables */
 
-@import '_elements-accessibility';
+@import '/_variables-colors';
+
+/* Modules */
+@import '/_tachyons/_box-sizing';
+@import '/_tachyons/_background-size';
+@import '/_tachyons/_borders';
+@import '/_tachyons/_border-colors';
+@import '/_tachyons/_border-radius';
+@import '/_tachyons/_border-style';
+/*@import '/_tachyons/_border-widths';*/
+@import '/_tachyons/_box-shadow';
+/*@import '/_tachyons/_code';*/
+@import '/_tachyons/_coordinates';
+@import '/_tachyons/_clears';
+@import '/_tachyons/_display';
+@import '/_tachyons/_floats';
+@import '/_tachyons/_font-family';
+@import '/_tachyons/_font-style';
+@import '/_tachyons/_font-weight';
+@import '/_tachyons/_forms';
+@import '/_tachyons/_heights';
+@import '/_tachyons/_letter-spacing';
+@import '/_tachyons/_line-height';
+@import '/_tachyons/_links';
+@import '/_tachyons/_lists';
+@import '/_tachyons/_max-widths';
+@import '/_tachyons/_widths';
+@import '/_tachyons/_overflow';
+@import '/_tachyons/_position';
+@import '/_tachyons/_opacity';
+@import '/_tachyons/_skins';
+@import '/_tachyons/_spacing';
+@import '/_tachyons/_tables';
+@import '/_tachyons/_text-decoration';
+@import '/_tachyons/_text-align';
+@import '/_tachyons/_text-transform';
+@import '/_tachyons/_type-scale';
+@import '/_tachyons/_typography';
+@import '/_tachyons/_utilities';
+@import '/_tachyons/_visibility';
+/*@import '/_tachyons/_white-space';*/
+@import '/_tachyons/_vertical-align';
+@import '/_tachyons/_hovers';
+
+/* Import media queries at end as this will allow you to customize them
+ * and override what is currently declared in each module.
+ */
+
+@import '/_tachyons/_tachyons-flex';
+@import '_variables-media-queries';
+
+
+
+@import '_styles';
 
 
 
 
+/* DEBUGGING */
+/*@import '/_tachyons/_debug_children';*/
 
-@import '_settings-colors';
-@import '_settings-media-queries';
-@import '_settings';
-
-
-
-.content {
-min-height: 90vh;
-}
-
-.element {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
+/* Uncomment out this line and rebuild if you want to debug your layout.*/
+/* @import '/_tachyons/_debug'; */

@@ -39,9 +39,9 @@ layout: compress
         {% include global/seo.html %}
 </head>
   <body  id="container" class="{% if page.class %} {{ page.class }} {% endif %}{{ jekyll.environment }}">
-    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <a href="#content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
     {% include global/nav-topbar.html %}    
-      <div class="content">
+      <main id="content" role="main">
         {{content}}
       </div>
     {% include global/footer.html %}
