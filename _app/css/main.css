@@ -21,6 +21,7 @@
 @import '/_tachyons/_coordinates';
 @import '/_tachyons/_clears';
 @import '/_tachyons/_display';
+@import '/_tachyons/_flexbox';
 @import '/_tachyons/_floats';
 @import '/_tachyons/_font-family';
 @import '/_tachyons/_font-style';
@@ -53,8 +54,6 @@
 /* Import media queries at end as this will allow you to customize them
  * and override what is currently declared in each module.
  */
-
-@import '/_tachyons/tachyons-flex';
 @import '_variables-media-queries';
 
 
