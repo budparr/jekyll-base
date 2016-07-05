@@ -1,3 +1,5 @@
+/*Put Tachyons overrides outside of src folder*/
+
 @import 'sanitize.css';
 /*@import 'normalize-opentype.css/normalize-opentype.css';*/
 
@@ -9,47 +11,47 @@
 @import '/_variables-colors';
 
 /* Modules */
-@import '/_tachyons/_box-sizing';
-@import '/_tachyons/_background-size';
-@import '/_tachyons/_borders';
-@import '/_tachyons/_border-colors';
-@import '/_tachyons/_border-radius';
-@import '/_tachyons/_border-style';
-/*@import '/_tachyons/_border-widths';*/
-@import '/_tachyons/_box-shadow';
-/*@import '/_tachyons/_code';*/
-@import '/_tachyons/_coordinates';
-@import '/_tachyons/_clears';
-@import '/_tachyons/_display';
-@import '/_tachyons/_flexbox';
-@import '/_tachyons/_floats';
-@import '/_tachyons/_font-family';
-@import '/_tachyons/_font-style';
-@import '/_tachyons/_font-weight';
-@import '/_tachyons/_forms';
-@import '/_tachyons/_heights';
-@import '/_tachyons/_letter-spacing';
-@import '/_tachyons/_line-height';
-@import '/_tachyons/_links';
-@import '/_tachyons/_lists';
-@import '/_tachyons/_max-widths';
-@import '/_tachyons/_widths';
-@import '/_tachyons/_overflow';
-@import '/_tachyons/_position';
-@import '/_tachyons/_opacity';
-@import '/_tachyons/_skins';
-@import '/_tachyons/_spacing';
-@import '/_tachyons/_tables';
-@import '/_tachyons/_text-decoration';
-@import '/_tachyons/_text-align';
-@import '/_tachyons/_text-transform';
-@import '/_tachyons/_type-scale';
-@import '/_tachyons/_typography';
-@import '/_tachyons/_utilities';
-@import '/_tachyons/_visibility';
-/*@import '/_tachyons/_white-space';*/
-@import '/_tachyons/_vertical-align';
-@import '/_tachyons/_hovers';
+@import '/src/_tachyons/_box-sizing';
+@import '/src/_tachyons/_background-size';
+@import '/src/_tachyons/_borders';
+@import '/src/_tachyons/_border-colors';
+@import '/src/_tachyons/_border-radius';
+@import '/src/_tachyons/_border-style';
+/*@import '/src/_tachyons/_border-widths';*/
+@import '/src/_tachyons/_box-shadow';
+/*@import '/src/_tachyons/_code';*/
+@import '/src/_tachyons/_coordinates';
+@import '/src/_tachyons/_clears';
+@import '/src/_tachyons/_display';
+@import '/src/_tachyons/_flexbox';
+@import '/src/_tachyons/_floats';
+@import '/src/_tachyons/_font-family';
+@import '/src/_tachyons/_font-style';
+@import '/src/_tachyons/_font-weight';
+@import '/src/_tachyons/_forms';
+@import '/src/_tachyons/_heights';
+@import '/src/_tachyons/_letter-spacing';
+@import '/src/_tachyons/_line-height';
+@import '/src/_tachyons/_links';
+@import '/src/_tachyons/_lists';
+@import '/src/_tachyons/_max-widths';
+@import '/src/_tachyons/_widths';
+@import '/src/_tachyons/_overflow';
+@import '/src/_tachyons/_position';
+@import '/src/_tachyons/_opacity';
+@import '/src/_tachyons/_skins';
+@import '/src/_tachyons/_spacing';
+@import '/src/_tachyons/_tables';
+@import '/src/_tachyons/_text-decoration';
+@import '/src/_tachyons/_text-align';
+@import '/src/_tachyons/_text-transform';
+@import '/src/_tachyons/_type-scale';
+@import '/src/_tachyons/_typography';
+@import '/src/_tachyons/_utilities';
+@import '/src/_tachyons/_visibility';
+/*@import '/src/_tachyons/_white-space';*/
+@import '/src/_tachyons/_vertical-align';
+@import '/src/_tachyons/_hovers';
 
 /* Import media queries at end as this will allow you to customize them
  * and override what is currently declared in each module.
