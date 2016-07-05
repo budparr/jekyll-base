@@ -1,54 +1,15 @@
-
-<nav class="bg-black db  ">
+<nav class="bg-brand db cf ph2">
   <div class="">    
     {% for link in site.data.nav-links %}
-     <a class="white btn hover-silver " href="{{ link.url }}" title="{{ link.title }}">
+     <a class="white hover-moon-gray no-underline f6 f5-ns dib mr3 mr4-ns" href="{{ link.url }}" title="{{ link.title }}">
       {{ link.title }}
      </a>
     {% endfor %}
   </div>
 </nav>
 
-
-
-<header class="tc pv4 pv5-ns bg-black" role="banner">
-  <img src="{{ site.logo }}" class=" pa1 ba b--black-10 h3 w3" alt="avatar" style="height:90px;">
-  
-  <h1 class="f5 f4-ns fw6 mid-gray">{{ site.title }}</h1>
+<header class="tc pv4 pv5-ns bg-brand" role="banner">
+  <img src="{{ site.logo }}" class=" pa1 ba b--black-10 h3 w3" alt="avatar" style="height:90px;">  
+  <h1 class="f5 f4-ns fw6 light-gray">{{ site.title }}</h1>
   <h2 class="f6 gray fw2 ttu tracked">{{ site.description }}</h2>
-  
 </header>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{% comment %}
-
-<nav class="bg-brand cb db dt-ns w-100 border-box pa3 ph5-ns">
-  <ul class="dib dtc-ns v-mid w-100 w-75-ns tc tr-ns list ph3">    
-    {% for link in site.data.nav-links %}
-     <a class="link dim white f6 f5-ns dib mr3 mr4-ns" href="{{ link.url }}" title="{{ link.title }}">{{ link.title }}</a>
-    {% endfor %}
-  </ul>
-</nav>
-
-
-
-<header class="bg-brand tc pv4 pv5-ns">
-  <img src="{{ site.logo }}" class="br3 ba b--black-10 h3 w3" alt="avatar">
-  <h1 class="f5 f4-ns fw6 white-70">{{ site.title }}</h1>
-  <h2 class="f6 white-60 fw2 ttu tracked">{{ site.description }}</h2>
-</header>
-
-{% endcomment %}
