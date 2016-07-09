@@ -1,72 +1,16 @@
-/*Put Tachyons overrides outside of src folder*/
-
 @import 'sanitize.css';
-/*@import 'normalize-opentype.css/normalize-opentype.css';*/
+@import 'normalize-opentype.css/normalize-opentype.css';
 
+@import '_fonts';
 
-@import '/_fonts';
+@import '_basscss';
 
-/* Variables */
+@import 'modules/accessibility';
 
-@import '/_variables-colors';
+@import 'colors';
 
-/* Modules */
-@import '/src/_tachyons/_box-sizing';
-@import '/src/_tachyons/_background-size';
-@import '/src/_tachyons/_borders';
-@import '/src/_tachyons/_border-colors';
-@import '/src/_tachyons/_border-radius';
-@import '/src/_tachyons/_border-style';
-/*@import '/src/_tachyons/_border-widths';*/
-@import '/src/_tachyons/_box-shadow';
-/*@import '/src/_tachyons/_code';*/
-@import '/src/_tachyons/_coordinates';
-@import '/src/_tachyons/_clears';
-@import '/src/_tachyons/_display';
-@import '/src/_tachyons/_flexbox';
-@import '/src/_tachyons/_floats';
-@import '/src/_tachyons/_font-family';
-@import '/src/_tachyons/_font-style';
-@import '/src/_tachyons/_font-weight';
-@import '/src/_tachyons/_forms';
-@import '/src/_tachyons/_heights';
-@import '/src/_tachyons/_letter-spacing';
-@import '/src/_tachyons/_line-height';
-@import '/src/_tachyons/_links';
-@import '/src/_tachyons/_lists';
-@import '/src/_tachyons/_max-widths';
-@import '/src/_tachyons/_widths';
-@import '/src/_tachyons/_overflow';
-@import '/src/_tachyons/_position';
-@import '/src/_tachyons/_opacity';
-@import '/src/_tachyons/_skins';
-@import '/src/_tachyons/_spacing';
-@import '/src/_tachyons/_tables';
-@import '/src/_tachyons/_text-decoration';
-@import '/src/_tachyons/_text-align';
-@import '/src/_tachyons/_text-transform';
-@import '/src/_tachyons/_type-scale';
-@import '/src/_tachyons/_typography';
-@import '/src/_tachyons/_utilities';
-@import '/src/_tachyons/_visibility';
-/*@import '/src/_tachyons/_white-space';*/
-@import '/src/_tachyons/_vertical-align';
-@import '/src/_tachyons/_hovers';
-
-/* Import media queries at end as this will allow you to customize them
- * and override what is currently declared in each module.
- */
+/*Variables*/
+@import '_variables-colors';
 @import '_variables-media-queries';
 
-
-
 @import '_styles';
-
-
-
-
-/* DEBUGGING */
-/*@import '/_tachyons/_debug_children';*/
-
-/* Uncomment out this line and rebuild if you want to debug your layout.*/
-/* @import '/_tachyons/_debug'; */

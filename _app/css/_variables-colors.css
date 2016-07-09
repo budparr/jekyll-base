@@ -4,6 +4,16 @@
 */
 
 :root {
+  --white-90: rgba(255,255,255,.9);
+  --white-80: rgba(255,255,255,.8);
+  --white-70: rgba(255,255,255,.7);
+  --white-60: rgba(255,255,255,.6);
+  --white-50: rgba(255,255,255,.5);
+  --white-40: rgba(255,255,255,.4);
+  --white-30: rgba(255,255,255,.3);
+  --white-20: rgba(255,255,255,.2);
+  --white-10: rgba(255,255,255,.1);
+
   --black: #000;
   --near-black: #111;
   --dark-gray:#333;
@@ -17,8 +27,4 @@
   --white: #fff;
   --brand: rgb(12, 30, 41);
  
-}
-
-.bg-brand {
-  background-color: var(--brand);
 }

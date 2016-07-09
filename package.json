@@ -18,6 +18,7 @@
     "compress:img": "imagemin _app/images assets/images -p",
     "watch:img": "onchange '_app/images/**/*.*' -- npm run compress:img",
     "copy:tachyons": "copyfiles -f 'node_modules/tachyons-z-index/src/*.css' 'node_modules/tachyons/src/*.css' '_app/css/src/_tachyons' ",
+    "copy:basscss": "copyfiles -u 1 node_modules/basscss-*/**/index.css '_app/css/src/_basscss' && copyfiles -u 1 node_modules/basscss-*/**/lib/*.* '_app/css/src/_basscss'",
     "build:css": "postcss -c _app/css/postcss.config.js",
     "hotbuild:css": "copyfiles -f assets/css/* _site/assets/css",
     "watch:css": "onchange '_app/css/**/*.css' -- run-s build:css hotbuild:css",
@@ -30,7 +31,7 @@
     "reload": "browser-sync reload",
     "start-with-scss": "npm-run-all copy:files build:scss build:js compress:img build:jekyll --parallel watch:scss watch:js watch:jekyll watch:img serve",
     "watch-with-scss": "run-p build:jekyll watch:scss watch:js watch:jekyll watch:img serve",
-    "start:fresh": "npm-run-all copy:files copy:tachyons build:css build:js compress:img build:jekyll --parallel watch:css watch:js watch:jekyll watch:img serve",
+    "start:fresh": "npm-run-all copy:files copy:basscss build:css build:js compress:img build:jekyll --parallel watch:css watch:js watch:jekyll watch:img serve",
     "start": "run-p build:jekyll watch:css watch:js watch:jekyll watch:img serve"
   },
   "repository": {
@@ -48,6 +49,8 @@
   "homepage": "https://github.com/budparr/jekyll-base#readme",
   "devDependencies": {
     "autoprefixer": "^6.3.6",
+    "basscss": "^8.0.1",
+    "basscss-addons": "^1.0.0-beta4",
     "bourbon-neat": "^1.7.4",
     "browser-sync": "^2.12.10",
     "copyfiles": "^0.2.1",

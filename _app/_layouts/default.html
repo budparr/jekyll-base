@@ -39,7 +39,7 @@ layout: compress
         {% include global/seo.html %}
 </head>
   <body  id="container" class="{% if page.class %} {{ page.class }} {% endif %}{{ jekyll.environment }}">
-    <a href="#content" tabindex="1" class="clip bg-white pv3 ph2">Skip to content</a>
+    <a href="#content" tabindex="1" class="hide-until-focused absolute top-0 left-0 bg-white-70 py3 px2">Skip to content</a>
     {% include global/header.html %}    
       <main id="content" role="main">
         {{content}}

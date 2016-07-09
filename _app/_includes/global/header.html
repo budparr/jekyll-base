@@ -1,15 +1,15 @@
-<nav class="bg-brand db cf ph2">
+<nav class="bg-brand block clearfix px2">
   <div class="">    
     {% for object in site.data.nav-links %}
-     <a class="hover-moon-gray no-underline f6 f5-ns dib pv3 mr3 mr4-ns{% if page.url == object.url %} white{% else %} gray{% endif %}" href="{{ object.url }}" title="{{ object.title }}">
+     <a class="hover-moon-gray text-decoration-none h4 inline-block py3 mr3{% if page.url == object.url %} white{% else %} silver{% endif %}" href="{{ object.url }}" title="{{ object.title }}">
       {{ object.title }}
      </a>
     {% endfor %}
   </div>
 </nav>
 
-<header class="tc pv4 pv5-ns bg-brand" role="banner">
+<header class="center px4 py4 bg-brand" role="banner">
   <img src="{{ site.logo }}" class=" pa1 ba b--black-10 h3 w3" alt="avatar" style="height:90px;">  
-  <h1 class="f5 f2-ns fw6 light-gray">{{ site.title }}</h1>
-  <h2 class="f6 gray fw2 ttu tracked">{{ site.description }}</h2>
+  <h1 class="h1 f2-ns fw6 white">{{ site.title }}</h1>
+  <h2 class="h3 silver fw2 ttu tracked">{{ site.description }}</h2>
 </header>
