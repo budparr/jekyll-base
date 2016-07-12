@@ -26,5 +26,13 @@
   --near-white: #f4f4f4;
   --white: #fff;
   --brand: rgb(12, 30, 41);
+
+  --blue: #0074d9;
+  --button-color: #fff;
+  --button-background-color: var(--brand);
+  --border-radius: 3px;
+  --darken-1: rgba(0, 0, 0, .0625);
+  --darken-2: rgba(0, 0, 0, .125);
+  --darken-3: rgba(0, 0, 0, .25);
  
 }

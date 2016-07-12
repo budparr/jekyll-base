@@ -7,7 +7,7 @@
 .bg-white  { background-color: var(--white) }
 
 .bg-white-70 { background-color: var(--white-70)}
-
+.bg-near-white { background-color: var(--near-white)}
 
 .black  { color: var(--black) }
 .gray   { color: var(--gray) }
