@@ -16,12 +16,13 @@ Clone the repo:
 `git clone https://github.com/budparr/jekyll-base.git`  
 
 cd into the repo's directory  
+`cd jekyll-base`
 
 Remove the .git folder:  
 `rm -rf .git`
 
 Run NPM:
-`$ npm run start:fresh`  
+`npm run start:fresh`  
 
 (after the first run, you can just run `npm start`)
 
