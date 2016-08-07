@@ -1,6 +1,6 @@
 <nav class="bg-brand block clearfix px2">
   <div class="">    
-    {% for object in site.nav-links %}
+    {% for object in site.data.navigation-links %}
      <a class="hover-moon-gray text-decoration-none h4 inline-block py3 mr3{% if page.url == object.url %} white{% else %} silver{% endif %}" href="{{ object.url }}" title="{{ object.title }}">
       {{ object.title }}
      </a>

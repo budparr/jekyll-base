@@ -18,17 +18,6 @@ owner: The New Dynamic
 short_name: The Shortname
 display: fullscreen
 
-nav-links:
-  - title: "Home"
-    url: /
-
-  - title: "About"
-    url: /about/
-
-  - title: "Contact"
-    url: /contact/  
-
-
 # development meta data
 image_url: http://thenewdynamic.imgix.net
 google_analytics_id: UA-xxxxx-4
