@@ -1,5 +1,5 @@
 ---
-title: This is the title
+title: paper
 ---
 🎉 Get Started with Dropbox Paper
 

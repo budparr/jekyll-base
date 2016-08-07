@@ -1,0 +1,52 @@
+---
+layout: default
+script: '/assets/js/lunr.min.js'
+load_script_async: false
+---
+{% assign box_classes = 'border rounded border-silver bg-black silver hover-bg-white hover-black bg-transition' %}
+
+
+<div id="content" class="block clearfix mt4 mb4">    
+    {% assign classes = 'block sm-inline-block md-block lg-block text-decoration-none hover-gray px2 py1 black hover-bg-black hover-white' %}
+
+
+  <article class="hentry block col-12 sm-col-9 md-col-7 lg-col-6 mx-auto">
+    
+
+    
+      <div id="entry-content" class="mid-gray px2">
+        {{ content | markdownify }}
+
+<ul id="search-results" class="list-reset text-decoration-none">
+  <li>
+    <img src="/assets/images/balls.svg">
+  </li>
+
+</ul>
+
+<script>
+  window.store = {
+  {% assign docs  = (site.documents | where_exp: 'item' , 'item.exclude_from_search != true' | sort: 'collection') %}
+  {% for entry in docs %}
+    "{{ entry.url | slugify }}": {
+      "title": "{{ entry.title | xml_escape }}",
+      "url": "{% if entry.collection == 'backstory' or entry.collection == 'related_coverage' %}{% assign video = (site.documents | where: 'slug', entry.video ) %}{{ video[1].url | xml_escape }}{% else %}{{ entry.url | xml_escape }}{% endif %}",
+      {% if entry.collectionName %}"category": "{{ entry.collectionName | xml_escape }}",{% endif %}
+      "content": "{{ entry.description | remove: '*'| remove: '_'| strip_html | strip_newlines | xml_escape }}{{ entry.content | strip_html | strip_newlines | truncatewords: 250 | xml_escape }}"{% if entry.staff_members %},
+      "author": "{{ entry.staff_members[0] | strip_newlines | xml_escape }} {{ entry.staff_members[1] | strip_newlines | xml_escape }} {{ entry.staff_members[2] | strip_newlines | xml_escape }}"
+      {% endif %}
+    }
+    {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+  };
+</script>
+
+
+
+
+      </div>
+    
+    
+  </article>
+  
+</div>
