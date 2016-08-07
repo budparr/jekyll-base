@@ -3,9 +3,12 @@
 Note that this repo is updated on an ongoing basis.
 
 ### Runs on
-- Jekyll 3.2  (dep: [Bundler](http://bundler.io/))
+- Jekyll 3.2  
+- [Bundler](http://bundler.io/)
 - NPM
 - BassCSS/PostCSS
+- Uglify/ESLint
+- Imagemin
 - Browser-sync
 
 
