@@ -3,7 +3,7 @@ WIP Jekyll starter with a focus on a lean workflow. Asset pipeline managed outsi
 Note that this repo is updated on an ongoing basis.
 
 Runs on
-- Jekyll 3.2+  (dep: [Bundler](http://bundler.io/))
+- Jekyll 3.2  (dep: [Bundler](http://bundler.io/))
 - NPM
 - BassCSS/PostCSS
 - Browser-sync
@@ -12,10 +12,19 @@ Runs on
 
 To get started:
 
-Clone the repo  
+Clone the repo:
+`git clone https://github.com/budparr/jekyll-base.git`  
+
 cd into the repo's directory  
-Remove the .git folder (rm -rf .git)  
+
+Remove the .git folder:  
+`rm -rf .git`
+
+Run NPM:
 `$ npm run start:fresh`  
+
 (after the first run, you can just run `npm start`)
 
+
+Layouts, includes and assets are located in the `_app` folder. The `assets` folder is built entirely from the build process, so don't add anything directly to it.
 
