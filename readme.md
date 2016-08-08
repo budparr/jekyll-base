@@ -24,7 +24,13 @@ cd into the repo's directory
 Remove the .git folder:  
 `rm -rf .git`
 
-Run NPM:
+Update Gems (assume you have Bundlr installed)  
+`bundle update`  
+
+Update node_modules  
+`npm install`  
+
+Run NPM:  
 `npm run start:fresh`  
 
 (after the first run, you can just run `npm start`)
