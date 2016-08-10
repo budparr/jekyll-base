@@ -24,10 +24,11 @@ cd into the repo's directory
 Remove the .git folder:  
 `rm -rf .git`
 
-Run NPM:
-`npm run start:fresh`  
+Initial build:
+`npm run init`  
 
-(after the first run, you can just run `npm start`)
+Run NPM:
+`npm start`
 
 
 Layouts, includes and assets are located in the `_app` folder. The `assets` folder is built entirely from the build process, so don't add anything directly to it.
