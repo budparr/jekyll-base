@@ -1,0 +1,40 @@
+
+.bg-transition {
+  transition: background-color 0.5s ease;
+  
+}
+
+.transition {
+  transition: all 0.5s ease;
+}
+
+
+
+.animated {
+  opacity: .3;
+}
+
+.blur:hover {
+  filter: none;
+}
+.animated:hover { 
+  
+  animation: hideshow 3s ease-out infinite;
+}
+
+@keyframes hideshow {
+  0% { opacity: .31; }
+  10% { opacity: .59; }
+  15% { opacity: .79; }
+  100% { opacity: 1; }
+} 
+
+/*@keyframes animatedBackground {
+  from { background-position: 0 0; }
+  to { background-position: 10% 10%; }
+}
+
+.animated:hover { 
+  
+  animation: animatedBackground 1s linear infinite;
+}*/

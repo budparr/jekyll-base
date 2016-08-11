@@ -1,0 +1,26 @@
+
+:root {
+  --space-125: .125rem;
+  --space-15: 1.5rem;
+ 
+/* PADDING */
+
+.p125  { padding:        var(--space-125) }
+.pt125 { padding-top:    var(--space-125) }
+.pr125 { padding-right:  var(--space-125) }
+.pb125 { padding-bottom: var(--space-125) }
+.pl125 { padding-left:   var(--space-125) }
+.py125 { padding-top:    var(--space-125); padding-bottom: var(--space-125) }
+.px125 { padding-left:   var(--space-125); padding-right:  var(--space-125) }
+
+.p15  { padding:        var(--space-15) }
+.pt15 { padding-top:    var(--space-15) }
+.pr15 { padding-right:  var(--space-15) }
+.pb15 { padding-bottom: var(--space-15) }
+.pl15 { padding-left:   var(--space-15) }
+.py15 { padding-top:    var(--space-15); padding-bottom: var(--space-15) }
+.px15 { padding-left:   var(--space-15); padding-right:  var(--space-15) }
+
+ 
+}
+

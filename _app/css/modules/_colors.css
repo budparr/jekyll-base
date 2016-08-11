@@ -1,0 +1,98 @@
+
+.border-muted {border-color: rgba(255,255,255,0.1)}
+.bg-brand { background-color: var(--brand)}
+.color-brand { color: var(--brand) !important;}
+.red { color: var(--red) }
+.near-white { color: var(--white-70) }
+
+.bg-black  { background-color: var(--black) }
+.bg-gray   { background-color: var(--gray) }
+.bg-silver { background-color: var(--silver) }
+.bg-white  { background-color: var(--white) }
+.bg-red     { background-color: var(--red) }
+.bg-white-70 { background-color: var(--white-70)}
+.bg-near-white { background-color: var(--near-white)}
+.bg-transparent { background-color: var(--transparent); }
+.bg-moon-gray { background-color: var(--moon-gray); }
+.black  { color: var(--black) }
+.gray   { color: var(--gray) }
+.mid-gray { color: var(--mid-gray) }
+.dark-gray   { color: var(--dark-gray) }
+.moon-gray { color: var(--moon-gray); }
+.silver { color: var(--silver) }
+.silver h1 { color: var(--brand) }
+.white  { color: var(--white) }
+
+
+.border-dark-gray   { border-color: var(--dark-gray); }
+.border-silver { border-color: var(--silver) }
+
+.hover-black:hover, .hover-black:hover h1 { color: var(--black); }
+.hover-near-black:hover { color: var(--near-black); }
+.hover-dark-gray:hover { color: var(--dark-gray); }
+.hover-mid-gray:hover { color: var(--mid-gray); }
+.hover-gray:hover { color: var(--gray); }
+.hover-silver:hover h1 { color: var(--brand); }
+.hover-silver:hover { color: var(--silver); }
+
+.hover-light-silver:hover { color: var(--light-silver); }
+.hover-moon-gray:hover { color: var(--moon-gray); }
+.hover-light-gray:hover { color: var(--light-gray); }
+.hover-near-white:hover { color: var(--near-white); }
+.hover-white:hover { color: var(--white);}
+.hover-color-brand:hover { color: var(--brand); }
+
+.hover-bg-black:hover { background-color: var(--black); }
+.hover-bg-near-black:hover { background-color: var(--near-black); }
+.hover-bg-dark-gray:hover { background-color: var(--dark-gray); }
+.hover-bg-mid-gray:hover { background-color: var(--mid-gray); }
+.hover-bg-gray:hover { background-color: var(--gray); }
+.hover-bg-silver:hover { background-color: var(--silver); }
+.hover-bg-light-silver:hover { background-color: var(--light-silver); }
+.hover-bg-moon-gray:hover { background-color: var(--moon-gray); }
+.hover-bg-light-gray:hover { background-color: var(--light-gray); }
+.hover-bg-near-white:hover { background-color: var(--near-white); }
+.hover-bg-white:hover { background-color: var(--white); }
+.hover-bg-transparent:hover { background-color: var(--transparent); }
+.hover-bg-color-brand:hover { background-color: var(--brand); }
+
+/*
+
+  Override Tachyons
+*/
+
+:root {
+  --white-90: rgba(255,255,255,.9);
+  --white-80: rgba(255,255,255,.8);
+  --white-70: rgba(255,255,255,.7);
+  --white-60: rgba(255,255,255,.6);
+  --white-50: rgba(255,255,255,.5);
+  --white-40: rgba(255,255,255,.4);
+  --white-30: rgba(255,255,255,.3);
+  --white-20: rgba(255,255,255,.2);
+  --white-10: rgba(255,255,255,.1);
+
+  --black: #111;
+  --near-black: #171515;
+  --dark-gray:#333;
+  --mid-gray:#555;
+  --gray: #777;
+  --silver: #ddd;
+  --light-silver: #FAFAFA;
+  --moon-gray: #8D9599;
+  --light-gray: #eee;
+  --near-white: #F8F8F8;
+  --white: #fff;
+  --red: #D3002D;
+  --yellow: #FFC312;  
+  --brand: var(--yellow);
+  --slate: #537282;
+  --blue: #0074d9;
+  --button-color: #fff;
+  --button-background-color: var(--brand);
+  --border-radius: 3px;
+  --darken-1: rgba(0, 0, 0, .0625);
+  --darken-2: rgba(0, 0, 0, .125);
+  --darken-3: rgba(0, 0, 0, .25);
+ 
+}

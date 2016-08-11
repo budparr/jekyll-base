@@ -1,0 +1,28 @@
+
+:root {
+
+  --sidebar-width: 320px;
+}
+
+
+  /*to show and hide the side nav*/
+.expandable { transform: translateX(var(--sidebar-width))}
+.expandable:target {transform: translateX(0)}
+
+.w-sidebar-lg {
+  width: var(--sidebar-width);
+}
+.m-sidebar {
+  margin-right: var(--sidebar-width);
+}
+
+
+/*
+TODO: make this responsive
+*/
+.w-sidebar-lg {
+  width: var(--sidebar-width);
+}
+.m-sidebar {
+  margin-right: var(--sidebar-width);
+}

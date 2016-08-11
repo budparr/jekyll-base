@@ -1,0 +1,15 @@
+.social-icon {
+    width:  28px;
+    height: 28px;
+    fill: currentColor;
+    transition: .2s;
+    opacity: .7;
+ 
+}
+.social-icon:hover {
+  opacity: 1;
+   transition: .2s; 
+}
+.social-link:not(:last-of-type) {
+    margin-right: .625rem;
+}

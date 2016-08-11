@@ -1,0 +1,9 @@
+@media (--breakpoint-sm) {
+  .sm-col-auto {width:auto}
+}
+@media (--breakpoint-md) {
+  .md-col-auto {width:auto}
+}
+@media (--breakpoint-lg) {
+  .lg-col-auto {width:auto}
+}
