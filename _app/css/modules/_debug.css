@@ -1,22 +1,19 @@
-
-
 body {
-  background-color: green;
+  border-top:3px solid green;
 }
 
 @media (--breakpoint-sm) {
   body {
-    background-color: red;
+    border-top:3px solid red;
   }
 }
 @media (--breakpoint-md) {
   body {
-    background-color: blue;
+    border-top:3px solid blue;
   }
 }
 @media (--breakpoint-lg) {
-  body, .bp {
-    background-color: #ddd;
+  body {
+    border-top:3px solid #ddd;
   }
 }
-
