@@ -1,6 +1,6 @@
 ## WIP Jekyll starter with a focus on a lean workflow. Asset pipeline managed outside of Jekyll, via NPM
 
-Note that this repo is updated on an ongoing basis.
+Note that this repo is updated on an ongoing basis. 
 
 ### Runs on
 - Jekyll 3.2  
@@ -10,6 +10,7 @@ Note that this repo is updated on an ongoing basis.
 - Uglify/ESLint
 - Imagemin
 - Browser-sync
+- Anatol Broder's Compress HTML
 
 
 
@@ -24,24 +25,24 @@ cd into the repo's directory
 Remove the .git folder:  
 `rm -rf .git`
 
-Update Gems (assume you have Bundlr installed)  
+Update Gems
 `bundle update`  
 
 Update node_modules  
 `npm install`  
 
 Initial build:
-`npm run init`  
+`npm run initialize`  
 
 Run NPM:
 `npm start`
 
 
-Layouts, includes and assets are located in the `_app` folder. The `assets` folder is built entirely from the build process, so don't add anything directly to it.
+Layouts, includes and assets are located in the `_app` folder. The `assets` folder is built entirely from the build process, so don't add anything directly to it. Note some of the scripts copied over are particular to my use, and/or for future use here.
 
 ### Roadmap
 - clean up design (it's a bit thrown together)
 - add basic search functionality via lunr.js
 - add page-styling unit tests (ala WP theme unit tests)
 - set up as gem-based theme?
-
+- add Jekyll admin (pre-beta gem is installed - needs to be run in a separate instance)
