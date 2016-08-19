@@ -7,7 +7,6 @@
  /* MODULES */
 @import 'modules/_accessibility';
 @import 'modules/_iframes';
-
 @import 'modules/_transitions';
 
 /* OVERRIDES */
@@ -15,6 +14,3 @@
 @import 'modules/_fonts';
 @import 'modules/_styles';
 /*@import 'modules/_debug';*/
-
-
-a.btn { margin-bottom:.5em }
