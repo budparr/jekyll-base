@@ -31,7 +31,7 @@
     "watch:jekyll": "onchange '_app/_includes/**/*' '_app/_layouts/**/*' '**/*.md' '_data/*.*' -- run-s build:jekyll reload",
     "serve": "browser-sync start --server '_site' --files './_site/assets/js/app.min.js' './_site/assets/css/main.css'",
     "reload": "browser-sync reload",
-    "init": "npm-run-all copy:files copy:basscss build:css build:js uglify:js-lunrjs compress:img build:jekyll",
+    "initialize": "npm-run-all copy:files copy:basscss build:css build:js uglify:js-lunrjs compress:img build:jekyll",
     "start": "npm-run-all build:jekyll --parallel watch:css watch:js watch:jekyll watch:img serve"
   },
   "repository": {

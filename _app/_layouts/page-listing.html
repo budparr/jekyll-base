@@ -4,12 +4,14 @@ schema: https://schema.org/WebPage
 ---
 
 
-<div class="media flex-wrap">
+<div class="p4">
+  <h2>These posts are a work in progress. They come from the Wordpress Theme Unit Test</h2>
   {% for post in site.posts  %}
-    <div class="p4 bg-near-white border media-body">
-      <a href="{{post.url}}">
+    
+      <a href="{{post.url}}" class="block">
         {{ post.title }}
       </a>
-    </div>
+    
   {% endfor %}
+
 </div>

@@ -5,13 +5,7 @@
 }
 
 body {
-  line-height: 1.5;
-  margin: 0;
-  color: #111;
-  background-color: #fff;
-     font-family:
-    "Avenir Next",
-    Avenir,
+  font-family:
     -apple-system,
     BlinkMacSystemFont,
     'Segoe UI',
@@ -19,6 +13,10 @@ body {
     'Helvetica Neue',
     Helvetica,
     sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  color: #111;
+  background-color: #fff;
 }
 
 img {
@@ -36,7 +34,7 @@ a {
 
 h1, h2, h3,
 h4, h5, h6 {
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.25;
   margin-top: 1em;
   margin-bottom: .5em;
@@ -90,3 +88,4 @@ hr {
   border-bottom-style: solid;
   border-bottom-color: #ccc;
 }
+
