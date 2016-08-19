@@ -24,8 +24,6 @@
     "build:css": "postcss -c _app/css/postcss.config.js",
     "hotbuild:css": "copyfiles -f assets/css/* _site/assets/css",
     "watch:css": "onchange '_app/css/**/*.css' -- run-s build:css hotbuild:css",
-    "build:scss": "node-sass --include-path node_modules/bourbon-neat/app/assets/stylesheets --include-path node_modules/bourbon/app/assets/stylesheets --output-style compressed -o assets/css _app/_scss",
-    "watch:scss": "onchange '_app/_scss/**/*.scss' -- run-s build:scss hotbuild:css",
     "clean:jekyll": "bundle exec jekyll clean",
     "build:jekyll": "bundle exec jekyll build",
     "watch:jekyll": "onchange '_app/_includes/**/*' '_app/_layouts/**/*' '**/*.md' '_data/*.*' -- run-s build:jekyll reload",
