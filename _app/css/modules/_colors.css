@@ -1,98 +1,146 @@
-
-.border-muted {border-color: rgba(255,255,255,0.1)}
-.bg-brand { background-color: var(--brand)}
-.color-brand { color: var(--brand) !important;}
-.red { color: var(--red) }
-.near-white { color: var(--white-70) }
-
-.bg-black  { background-color: var(--black) }
-.bg-gray   { background-color: var(--gray) }
-.bg-silver { background-color: var(--silver) }
-.bg-white  { background-color: var(--white) }
-.bg-red     { background-color: var(--red) }
-.bg-white-70 { background-color: var(--white-70)}
-.bg-near-white { background-color: var(--near-white)}
-.bg-transparent { background-color: var(--transparent); }
-.bg-moon-gray { background-color: var(--moon-gray); }
-.black  { color: var(--black) }
-.gray   { color: var(--gray) }
-.mid-gray { color: var(--mid-gray) }
-.dark-gray   { color: var(--dark-gray) }
-.moon-gray { color: var(--moon-gray); }
-.silver { color: var(--silver) }
-.silver h1 { color: var(--brand) }
-.white  { color: var(--white) }
-
-
-.border-dark-gray   { border-color: var(--dark-gray); }
-.border-silver { border-color: var(--silver) }
-
-.hover-black:hover, .hover-black:hover h1 { color: var(--black); }
-.hover-near-black:hover { color: var(--near-black); }
-.hover-dark-gray:hover { color: var(--dark-gray); }
-.hover-mid-gray:hover { color: var(--mid-gray); }
-.hover-gray:hover { color: var(--gray); }
-.hover-silver:hover h1 { color: var(--brand); }
-.hover-silver:hover { color: var(--silver); }
-
-.hover-light-silver:hover { color: var(--light-silver); }
-.hover-moon-gray:hover { color: var(--moon-gray); }
-.hover-light-gray:hover { color: var(--light-gray); }
-.hover-near-white:hover { color: var(--near-white); }
-.hover-white:hover { color: var(--white);}
-.hover-color-brand:hover { color: var(--brand); }
-
-.hover-bg-black:hover { background-color: var(--black); }
-.hover-bg-near-black:hover { background-color: var(--near-black); }
-.hover-bg-dark-gray:hover { background-color: var(--dark-gray); }
-.hover-bg-mid-gray:hover { background-color: var(--mid-gray); }
-.hover-bg-gray:hover { background-color: var(--gray); }
-.hover-bg-silver:hover { background-color: var(--silver); }
-.hover-bg-light-silver:hover { background-color: var(--light-silver); }
-.hover-bg-moon-gray:hover { background-color: var(--moon-gray); }
-.hover-bg-light-gray:hover { background-color: var(--light-gray); }
-.hover-bg-near-white:hover { background-color: var(--near-white); }
-.hover-bg-white:hover { background-color: var(--white); }
-.hover-bg-transparent:hover { background-color: var(--transparent); }
-.hover-bg-color-brand:hover { background-color: var(--brand); }
-
+@import 'google-material-color/dist/palette.var.css';
 /*
 
-  Override Tachyons
+   COLOR VARIABLES
+
+   Variables to set colors for
+   color, background-color, and border-color
+
+   Use Material Design/Polymer as Default
+   https://material.google.com/style/color.html
+
+    // format
+   .color_name {color}
+   .bg-color_name {background-color}
+   .hover-bg-color_name:hover {backgroun-color}
+   .hover-color_name:hover; {color}
+
+   // base colors
+    white
+    near-white
+    silver
+    light-gray
+    gray   
+    dark-gray
+    black
+   
+   // theme colors
+    dark-primary-color    (background-color)   
+    primary-color   (background-color)   
+    light-primary-color (background-color)   
+    text-primary-color     (color)    
+    accent-color            (background-color)   
+    primary-background-color (background-color)   
+    primary-text-color      (color)    
+    secondary-text-color   (color)     
+    disabled-text-color     (color)    
+    divider-color       (color)        
+
 */
 
-:root {
-  --white-90: rgba(255,255,255,.9);
-  --white-80: rgba(255,255,255,.8);
-  --white-70: rgba(255,255,255,.7);
-  --white-60: rgba(255,255,255,.6);
-  --white-50: rgba(255,255,255,.5);
-  --white-40: rgba(255,255,255,.4);
-  --white-30: rgba(255,255,255,.3);
-  --white-20: rgba(255,255,255,.2);
-  --white-10: rgba(255,255,255,.1);
+a { color: var(--brand-lighten)}
+.muted { opacity: .5 }
 
-  --black: #111;
-  --near-black: #171515;
-  --dark-gray:#333;
-  --mid-gray:#555;
-  --gray: #777;
-  --silver: #ddd;
-  --light-silver: #FAFAFA;
-  --moon-gray: #8D9599;
-  --light-gray: #eee;
-  --near-white: #F8F8F8;
-  --white: #fff;
-  --red: #D3002D;
-  --yellow: #FFC312;  
-  --brand: var(--black);
-  --slate: #537282;
-  --blue: #0074d9;
-  --button-color: #fff;
-  --button-background-color: var(--brand);
-  --border-radius: 3px;
-  --darken-1: rgba(0, 0, 0, .0625);
-  --darken-2: rgba(0, 0, 0, .125);
-  --darken-3: rgba(0, 0, 0, .25);
- 
+
+.white {color: var(--white)}
+.bg-white {background-color: var(--white)}
+.hover-bg-white:hover {background-color: var(--white)}
+.hover-white:hover {color: var(--white)}
+
+.near-white {color: var(--near-white)}
+.bg-near-white {background-color: var(--near-white)}
+.hover-bg-near-white:hover {background-color: var(--near-white)}
+.hover-near-white:hover {color: var(--near-white)}
+
+.silver {color: var(--silver)}
+.bg-silver {background-color: var(--silver)}
+.hover-bg-silver:hover {background-color: var(--silver)}
+.hover-silver:hover {color: var(--silver)}
+
+.light-gray {color: var(--light-gray)}
+.bg-light-gray {background-color: var(--light-gray)}
+.hover-bg-light-gray:hover {background-color: var(--light-gray)}
+.hover-light-gray:hover {color: var(--light-gray)}
+
+.gray {color: var(--gray)}
+.bg-gray {background-color: var(--gray)}
+.hover-bg-gray:hover {background-color: var(--gray)}
+.hover-gray:hover {color: var(--gray)}
+
+.dark-gray {color: var(--dark-gray)}
+.bg-dark-gray {background-color: var(--dark-gray)}
+.hover-bg-dark-gray:hover {background-color: var(--dark-gray)}
+.hover-dark-gray:hover {color: var(--dark-gray)}
+
+.black {color: var(--black)}
+.bg-black {background-color: var(--black)}
+.hover-bg-black:hover {background-color: var(--black)}
+.hover-black:hover {color: var(--black)}
+
+.light-primary-color {color: var(--light-primary-color)}
+.bg-light-primary-color {background-color: var(--light-primary-color)}
+.hover-bg-light-primary-color:hover {background-color: var(--light-primary-color)}
+.hover-light-primary-color:hover {color: var(--light-primary-color)}
+
+.primary-color {color: var(--primary-color)}
+.bg-primary-color {background-color: var(--primary-color)}
+.hover-bg-primary-color:hover {background-color: var(--primary-color)}
+.hover-primary-color:hover {color: var(--primary-color)}
+
+.dark-primary-color {color: var(--dark-primary-color)}
+.bg-dark-primary-color {background-color: var(--dark-primary-color)}
+.hover-bg-dark-primary-color:hover {background-color: var(--dark-primary-color)}
+.hover-dark-primary-color:hover {color: var(--dark-primary-color)}
+
+.primary-text-color  {color: var(--primary-text-color)}
+.secondary-text-color  {color: var(--secondary-text-color)}
+.disabled-text-color  {color: var(--disabled-text-color)}
+
+.bg-accent-color {background-color: var(--accent-color)}
+.hover-bg-accent-color:hover {background-color: var(--accent-color)}
+
+.bg-light-accent-color {background-color: var(--light-accent-color)}
+.hover-bg-light-accent-color:hover {background-color: var(--light-accent-color)}
+
+.bg-dark-accent-color {background-color: var(--dark-accent-color)}
+.hover-bg-dark-accent-color:hover {background-color: var(--dark-accent-color)}
+
+.border-divider-color  { border-color: var(--divider-color); }
+
+
+
+
+
+/* variables */
+:root {
+
+  
+  --near-white: #F8F8F8;  
+  --silver: #DDDDDD;
+  --gray:   #AAAAAA;
+  --light-gray: #EEE;
+  --dark-gray:  #333;
+  --black:  #111111;
+    
+    /* Material */
+
+    /*NEXT FILL THESE IN WITH VALUES FROM GOOGLE MATERIAL NAMES
+        Then, make this a themeable thing? Generate themes? 
+    */
+    --dark-primary-color:           var(--palette-Blue-700);
+    --primary-color:                var(--palette-Blue-500);
+    --light-primary-color:          var(--palette-Blue-100);    
+    --text-primary-color:           var(--palette-White-500);
+    --accent-color:                 var(--palette-Pink-A200);
+    --light-accent-color:           var(--palette-Pink-A100);
+    --dark-accent-color:            var(--palette-Pink-A400);
+    --primary-text-color:           var(--palette-Grey-900);
+    --secondary-text-color:         var(--palette-Grey-600);
+    --disabled-text-color:          var(--palette-Grey-400);
+    --divider-color:                var(--palette-Grey-400);
+
+    /*BassCSS overrides*/
+
+  --button-background-color: var(--purple); 
+  --transparent:transparent;
 }

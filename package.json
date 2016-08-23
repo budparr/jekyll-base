@@ -55,6 +55,7 @@
     "eslint": "^2.11.1",
     "eslint-config-google": "^0.5.0",
     "flexibility": "^1.0.6",
+    "google-material-color": "^1.2.6",
     "html5shiv": "^3.7.3",
     "imagemin-cli": "^2.1.0",
     "install": "^0.8.1",

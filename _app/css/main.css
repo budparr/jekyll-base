@@ -8,7 +8,7 @@
 @import 'modules/_accessibility';
 @import 'modules/_iframes';
 @import 'modules/_transitions';
-
+@import 'modules/_shadows';
 /* OVERRIDES */
 @import 'modules/_colors';
 @import 'modules/_fonts';
