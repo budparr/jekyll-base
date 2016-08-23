@@ -1,6 +1,6 @@
 ## WIP Jekyll starter with a focus on a lean workflow. Asset pipeline managed outside of Jekyll, via NPM
 
-Note that this repo is updated on an ongoing basis. 
+Note that this repo is updated on an ongoing basis. I just added a new structure for adding colors, based on Material Design concepts, so the colors on the built site may be funky for the moment.
 
 ### Runs on
 - Jekyll 3.2  
