@@ -20,7 +20,6 @@
     "watch:js": "onchange '_app/js/*.js' -- npm run build:js",
     "compress:img": "imagemin _app/images assets/images -p",
     "watch:img": "onchange '_app/images/**/*.*' -- npm run compress:img",
-    "copy:basscss": "copyfiles -u 1 node_modules/basscss-*/**/index.css '_app/css/src/_basscss' && copyfiles -u 1 node_modules/basscss-*/**/lib/*.* '_app/css/src/_basscss'",
     "build:css": "postcss -c _app/css/postcss.config.js",
     "hotbuild:css": "copyfiles -f assets/css/* _site/assets/css",
     "watch:css": "onchange '_app/css/**/*.css' -- run-s build:css hotbuild:css",
@@ -29,7 +28,7 @@
     "watch:jekyll": "onchange '_app/_includes/**/*' '_app/_layouts/**/*' '**/*.md' '_data/*.*' -- run-s build:jekyll reload",
     "serve": "browser-sync start --server '_site' --files './_site/assets/js/app.min.js' './_site/assets/css/main.css'",
     "reload": "browser-sync reload",
-    "initialize": "npm-run-all copy:files copy:basscss build:css build:js uglify:js-lunrjs compress:img build:jekyll",
+    "initialize": "npm-run-all copy:files build:css build:js uglify:js-lunrjs compress:img build:jekyll",
     "start": "npm-run-all build:jekyll --parallel watch:css watch:js watch:jekyll watch:img serve"
   },
   "repository": {
