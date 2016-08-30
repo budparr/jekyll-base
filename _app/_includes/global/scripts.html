@@ -1,3 +1,5 @@
+{% comment %}
+<!-- Don't assume we're using scripts -->
 <script type="text/javascript" src="/static/js/dist/scripts-concatenated.min.js" asyn="true"></script>
 
 
@@ -13,3 +15,5 @@
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(wf, s);
   })(); </script>
+
+   {% endcomment %}
