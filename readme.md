@@ -12,6 +12,8 @@ Note that this repo is updated on an ongoing basis. I just added a new structure
 - Browser-sync
 - Anatol Broder's Compress HTML
 
+### DEMO
+This is what it looks like: [lean-jekyll.surge.sh](http://lean-jekyll.surge.sh)
 
 
 ### To get started:
@@ -41,6 +43,7 @@ Run NPM:
 Layouts, includes and assets are located in the `_app` folder. The `assets` folder is built entirely from the build process, so don't add anything directly to it. Note some of the scripts copied over are particular to my use, and/or for future use here.
 
 ### Roadmap
+- improve the uglify scripts in package.json, which currently reflect too many options are messy.
 - clean up design (it's a bit thrown together)
 - add basic search functionality via lunr.js
 - add page-styling unit tests (ala WP theme unit tests)
