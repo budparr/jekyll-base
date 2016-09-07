@@ -1,15 +1,14 @@
-<nav class="bg-brand db cf ph2">
-  <div class="">    
-    {% for link in site.data.nav-links %}
-     <a class="white hover-moon-gray no-underline f6 f5-ns dib mr3 mr4-ns" href="{{ link.url }}" title="{{ link.title }}">
-      {{ link.title }}
+<nav class="flex items-baseline clearfix px3 py2 mb4 lg-flex lg-fixed lg-top-0 lg-right-0 lg-left-0 z4 bg-primary-color-dark text-on-primary-color">
+
+  <div class="lg-mr3 col-12 lg-col-5">
+    <a href="/" class="h1 inline-block text-decoration-none text-on-primary-color hover-silver">
+      {{ site.title }}
+    </a>
+  </div>
+    <div class="flex-auto"><!--  space  --></div>
+    {% for object in site.data.navigation-links %}
+     <a class="hover-moon-gray text-decoration-none lg-h4 inline-block mr2 lg-mr3{% if page.url == object.url %} accent-color{% else %} text-on-primary-color{% endif %}" href="{{ object.url }}" title="{{ object.title }}">
+      {{ object.title }}
      </a>
     {% endfor %}
-  </div>
 </nav>
-
-<header class="tc pv4 pv5-ns bg-brand" role="banner">
-  <img src="{{ site.logo }}" class=" pa1 ba b--black-10 h3 w3" alt="avatar" style="height:90px;">  
-  <h1 class="f5 f4-ns fw6 light-gray">{{ site.title }}</h1>
-  <h2 class="f6 gray fw2 ttu tracked">{{ site.description }}</h2>
-</header>
