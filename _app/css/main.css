@@ -14,3 +14,11 @@
 @import 'modules/_fonts';
 @import 'modules/_styles';
 /*@import 'modules/_debug';*/
+
+
+:root {
+  --space-1: .5rem;
+  --space-2: 10rem;
+  --space-3: 2rem;
+  --space-4: 4rem;
+}
